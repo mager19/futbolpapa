@@ -19,7 +19,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="icon" href="<?php the_field('fps_favicon', 'option'); ?>">
+    <link rel="icon" href="<?php the_field('favicon', 'option'); ?>">
 
     <!--/Favicon-->
     <meta name="msapplication-TileColor" content="#d65a45">
@@ -37,10 +37,10 @@
         <!-- Header -->
         <header id="masthead" class="site-header bg-gray-300 px-4">
             <div class="container mx-auto">
-                <div class="flex items-center py-4 pxsera-4">
+                <div class="flex items-center py-4 px-4">
                     <div class="sitelogo w-9/12 lg:w-4/12 ">
                         <?php
-                        $GETlogo = get_field('fps_logo_site', 'option'); ?>
+                        $GETlogo = get_field('logo_site', 'option'); ?>
                         <a href="<?php echo esc_url(get_bloginfo('url')); ?>">
                             <?php if ($GETlogo) { 
                                 fps_get_Image($GETlogo);

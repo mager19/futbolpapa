@@ -38,3 +38,9 @@
     } 
 
     add_shortcode('button', 'fps_buttons'); 
+
+    function futbolpapa_displaydate()
+    {
+        return date('Y');
+    }
+    add_shortcode('date', 'futbolpapa_displaydate');

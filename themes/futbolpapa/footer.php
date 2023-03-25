@@ -27,7 +27,9 @@
                         <div class="site__footer__logo w-full md:w-3/12 text-center lg:text-left mb-4">
 
                             <a href="<?php echo esc_url(get_bloginfo('url')); ?>">
-                                <?php if ($GETlogo) { 
+                                <?php 
+                                $GETlogo = get_field('logo_site', 'option');
+                                if ($GETlogo) { 
                                     fps_get_Image($GETlogo);
                                 } else {
                                     echo "<h3 class='mb-0'>Logo Brand</h3>";
@@ -52,7 +54,7 @@
 
                             <!-- copyright -->
                             <div class="copyright text-center">
-                                <?php the_field('fps_copyright', 'option'); ?>
+                                <?php the_field('copyright', 'option'); ?>
                             </div>
                             <!--/ copyright -->
 

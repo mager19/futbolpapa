@@ -55,12 +55,6 @@ if (!function_exists('baseTheme')) :
 endif;
 add_action('after_setup_theme', 'baseTheme');
 
-
-// Disable Guteneberg
-
-add_filter('use_block_editor_for_post', '__return_false');
-
-
 // Remove type in style and script
 
 add_action(
