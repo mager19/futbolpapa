@@ -246,17 +246,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-    color: royalblue;
+    @apply text-primary;
 }
 
 a:visited {
-    color: purple;
+    @apply text-primary;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: midnightblue;
+    @apply text-primary;
 }
 
 a:focus {
@@ -597,7 +597,7 @@ html {
 }
 
 body {
-    @apply font-normal text-dark-1 font-inter;
+    @apply font-normal text-text font-book;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: rem(16px);
@@ -707,7 +707,7 @@ p {
 }
 
 a {
-    @apply text-primary;
+    @apply text-text;
     @mixin fade;
     &:hover {
         @apply text-secondary;

@@ -7,7 +7,8 @@ const TerserPlugin = require("terser-webpack-plugin");
 // change these variables to fit your project
 const jsPath = "./assets/src/js";
 const outputPath = "./assets/dist";
-const localDomain = "https://futbolpapa.local/";
+// const localDomain = "https://futbolpapa.local/";
+const localDomain = "http://localhost:10038/";
 const entryPoints = {
     // 'app' is the output name, people commonly use 'bundle'
     // you can have more than 1 entry point

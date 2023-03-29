@@ -13,8 +13,6 @@
 
 <head>
 
-    <?php get_template_part('inc/functions/datalayer', 'info'); ?>
-
     <!--/Google Tag Manager-->
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,11 +31,12 @@
     <?php wp_body_open(); ?>    
 
     <div id="page" class="site">
-
+        <!-- topbar -->
+        <?php get_template_part('template-parts/top', 'bar'); ?>
         <!-- Header -->
-        <header id="masthead" class="site-header bg-gray-300 px-4">
+        <header id="masthead" class="site-header">
             <div class="container mx-auto">
-                <div class="flex items-center py-4 px-4">
+                <div class="flex items-center py-8 px-4">
                     <div class="sitelogo w-9/12 lg:w-4/12 ">
                         <?php
                         $GETlogo = get_field('logo_site', 'option'); ?>
@@ -64,9 +63,9 @@
                     <!--/Menu-->
 
                     <!-- Button trigger mobile -->
-                    <button type="button" class="mobile-nav border-none lg:hidden w-3/12 flex justify-end" id="menumobile">
+                    <button type="button" class="mobile-nav border-none lg:hidden w-3/12 flex justify-end p-0" id="menumobile">
                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 18.3333C22 19.2538 21.2538 20 20.3333 20H12.6667C11.7462 20 11 19.2538 11 18.3333V18.3333C11 17.4129 11.7462 16.6667 12.6667 16.6667H20.3333C21.2538 16.6667 22 17.4129 22 18.3333V18.3333ZM22 10C22 10.9205 21.2538 11.6667 20.3333 11.6667H1.66667C0.746192 11.6667 0 10.9205 0 10V10C0 9.07952 0.746192 8.33333 1.66667 8.33333H20.3333C21.2538 8.33333 22 9.07952 22 10V10ZM22 1.66667C22 2.58714 21.2538 3.33333 20.3333 3.33333H1.66667C0.746193 3.33333 0 2.58714 0 1.66667V1.66667C0 0.746192 0.746192 0 1.66667 0H20.3333C21.2538 0 22 0.746192 22 1.66667V1.66667Z" fill="#031B4C" />
+                            <path d="M22 18.3333C22 19.2538 21.2538 20 20.3333 20H12.6667C11.7462 20 11 19.2538 11 18.3333V18.3333C11 17.4129 11.7462 16.6667 12.6667 16.6667H20.3333C21.2538 16.6667 22 17.4129 22 18.3333V18.3333ZM22 10C22 10.9205 21.2538 11.6667 20.3333 11.6667H1.66667C0.746192 11.6667 0 10.9205 0 10V10C0 9.07952 0.746192 8.33333 1.66667 8.33333H20.3333C21.2538 8.33333 22 9.07952 22 10V10ZM22 1.66667C22 2.58714 21.2538 3.33333 20.3333 3.33333H1.66667C0.746193 3.33333 0 2.58714 0 1.66667V1.66667C0 0.746192 0.746192 0 1.66667 0H20.3333C21.2538 0 22 0.746192 22 1.66667V1.66667Z" fill="#1F8A70" />
                         </svg>
 
                     </button>
@@ -77,6 +76,7 @@
         </header>
         <!--/ Header -->
 
+        <?php get_template_part('template-parts/trending', 'bar'); ?>
 
         <!-- Content Page -->
         <div id="content" class="site-content">
